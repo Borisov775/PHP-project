@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>First lab web</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="header">
+    <p>George Borisov, Dmitriy Haidapov; P33212, Вариант: 16223</p>
+</div>
+
+
+<div class="container">
+
+    <div class="image_of_task">
+        <img id="imageArea" src="images/areas1.png" alt="areas">
+    </div>
+
+    <div class="options_choice">
+        <div id="input_field_X" class="validate">
+            <p class="variable">X=
+                <label>-5
+                    <input class="check_box" type="checkbox" value="-3" name="check_box">
+                </label>
+                <label>-4
+                    <input class="check_box" type="checkbox" value="-2" name="check_box">
+                </label>
+                <label>-3
+                    <input class="check_box" type="checkbox" value="-1" name="check_box">
+                </label>
+                <label>-2
+                    <input class="check_box" type="checkbox" value="0" name="check_box">
+                </label>
+                <label>-1
+                    <input class="check_box" type="checkbox" value="1" name="check_box">
+                </label>
+                <label>0
+                    <input class="check_box" type="checkbox" value="2" name="check_box">
+                </label>
+                <label>1
+                    <input class="check_box" type="checkbox" value="3" name="check_box">
+                </label>
+                <label>2
+                    <input class="check_box" type="checkbox" value="4" name="check_box">
+                </label>
+                <label>3
+                    <input class="check_box" type="checkbox" value="5" name="check_box">
+                </label>
+
+            </p>
+            <p id="wrong_field_X" class="wrong"></p>
+        </div>
+
+        <div id="input_field_Y" class="validate">
+            <p class="variable">У=
+                <label for="Y"></label><input id="Y" type="text" placeholder="Enter Y:">
+            </p>
+            <p id="wrong_field_Y" class="wrong"></p>
+        </div>
+
+        <div id="input_field_R" class="validate">
+            <p class="variable">R=
+            <label>Choose the parameter</label>
+                <select id="R">
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2">2</option>
+                    <option value="2.5">2.5</option>
+                    <option value="3">3</option>
+                </select>
+            </p>
+            <p id="wrong_field_R" class="wrong"></p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="send-button" class="sliding-button" type="submit">Send</button>
+        <button id="clear-button" class="sliding-button" type="submit">Clear</button>
+    </div>
+
+</div>
+
+<div class="table_of_results">
+    <table id="result_table" class="result_table">
+        <tr>
+            <th class="variable">X</th>
+            <th class="variable">Y</th>
+            <th class="variable">R</th>
+            <th>Result</th>
+            <th>Sending time</th>
+            <th>Total processing time</th>
+        </tr>
+    </table>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
